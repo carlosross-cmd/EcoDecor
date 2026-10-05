@@ -17,9 +17,6 @@
 
     <title>Finalizar pedido | EcoDecor</title>
 
-
-    <!-- Fontes -->
-
     <link
         rel="preconnect"
         href="https://fonts.googleapis.com"
@@ -37,8 +34,6 @@
     >
 
 
-    <!-- CSS principal -->
-
     <link
         rel="stylesheet"
         href="css/style.css"
@@ -48,10 +43,6 @@
 
 
 <body>
-
-    <!-- ============================================
-         CABEÇALHO
-    ============================================ -->
 
     <header class="site-header">
 
@@ -81,7 +72,6 @@
             </a>
 
 
-            <!-- Navegação principal -->
 
             <nav class="main-nav">
 
@@ -103,14 +93,8 @@
 
     </header>
 
-
-    <!-- ============================================
-         CONTEÚDO PRINCIPAL
-    ============================================ -->
-
     <main>
 
-        <!-- Título da página -->
 
         <section class="page-heading compact-heading">
 
@@ -134,25 +118,16 @@
         </section>
 
 
-        <!-- ========================================
-             ÁREA DE CHECKOUT
-        ======================================== -->
-
         <section class="section">
 
             <div class="container checkout-grid">
-
-
-                <!-- ====================================
-                     FORMULÁRIO DO CLIENTE
-                ==================================== -->
 
                 <form
                     class="checkout-form"
                     id="checkoutForm"
                 >
 
-                    <!-- Dados do cliente -->
+                
 
                     <div class="form-card">
 
@@ -163,7 +138,7 @@
 
                         <div class="form-grid">
 
-                            <!-- Nome -->
+                     
 
                             <label>
 
@@ -179,7 +154,7 @@
                             </label>
 
 
-                            <!-- Telefone -->
+                    
 
                             <label>
 
@@ -195,14 +170,12 @@
                             </label>
 
 
-                            <!-- CPF -->
+               
 
                             <label>
                                 CPF *
                                 <input required name="cpf" id="cpf" type="text" inputmode="numeric" maxlength="14" placeholder="000.000.000-00">
                             </label>
-
-                            <!-- CEP -->
 
                             <label>
                                 CEP *
@@ -242,7 +215,7 @@
                             <input type="hidden" name="endereco_entrega" id="endereco_entrega">
 
 
-                            <!-- Forma de pagamento -->
+                         
 
                             <label>
 
@@ -274,7 +247,7 @@
                             </label>
 
 
-                            <!-- Observações -->
+                            
 
                             <label>
 
@@ -293,9 +266,7 @@
                     </div>
 
 
-                    <!-- ====================================
-                         CONFIRMAÇÃO
-                    ==================================== -->
+                  
 
                     <div class="form-card">
 
@@ -342,9 +313,7 @@
                 </form>
 
 
-                <!-- ====================================
-                     RESUMO DO PEDIDO
-                ==================================== -->
+               
 
                 <aside class="summary-card">
 
@@ -353,19 +322,15 @@
                     </h2>
 
 
-                    <!-- Produtos do carrinho -->
-
+                  
                     <div id="checkoutItems">
 
-                        <!--
-                            Os produtos serão inseridos
-                            pelo arquivo checkout.js.
-                        -->
+                     
 
                     </div>
 
 
-                    <!-- Subtotal -->
+            
 
                     <div class="summary-line">
 
@@ -380,7 +345,7 @@
                     </div>
 
 
-                    <!-- Entrega -->
+       
 
                     <div class="summary-line">
 
@@ -388,14 +353,13 @@
                             Entrega
                         </span>
 
-                        <strong>
-                            R$ 10,00
+                        <strong id="summaryDelivery">
+                            R$ 0,00
                         </strong>
 
                     </div>
 
 
-                    <!-- Total -->
 
                     <div class="summary-total">
 
@@ -404,13 +368,13 @@
                         </span>
 
                         <strong id="summaryTotal">
-                            R$ 10,00
+                            R$ 0,00
                         </strong>
 
                     </div>
 
 
-                    <!-- Link para continuar comprando -->
+                  
 
                     <a
                         class="text-link"
@@ -428,13 +392,6 @@
         </section>
 
     </main>
-
-
-    <!-- ============================================
-         SCRIPTS
-    ============================================ -->
-
-    <!-- Dados dos produtos -->
 
    <script src="js/data.js"></script>
 
