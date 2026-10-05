@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Produtos favoritados na EcoDecor."
+    >
+
+    <title>Meus favoritos | EcoDecor</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ============================================
+         CABEÇALHO
+    ============================================ -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a class="brand" href="index.html">
+
+                <span class="brand-mark">⌁</span>
+
+                <span>
+                    <strong>
+                        Eco<span>Decor</span>
+                    </strong>
+
+                    <small>
+                        Decoração sustentável
+                    </small>
+                </span>
+
+            </a>
+
+            <!-- Navegação principal -->
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a
+                    class="active"
+                    href="favoritos.html"
+                >
+                    Favoritos
+                </a>
+
+                <a href="meus-pedidos.html">
+                    Meus pedidos
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <a
+                    class="icon-button"
+                    href="produtos.html"
+                    aria-label="Buscar produtos"
+                >
+                    ⌕
+                </a>
+
+                <a
+                    class="icon-button favorite-link is-active"
+                    href="favoritos.html"
+                    aria-label="Favoritos"
+                >
+                    ♥
+                    <span id="favoriteCount">0</span>
+                </a>
+
+                <a
+                    class="icon-button"
+                    href="checkout.html"
+                    aria-label="Carrinho"
+                >
+                    🛒
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+>
+
+    <main>
+
+
+        <section class="page-heading compact-heading">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    SEUS PREFERIDOS
+                </p>
+
+                <h1>
+                    Meus favoritos
+                </h1>
+
+                <p>
+                    Os produtos que você marcou com ♥ ficam guardados aqui.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div
+                    class="product-grid product-grid-large"
+                    id="favoriteProducts"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-bottom">
+
+            <small>
+                © 2026 EcoDecor. Projeto acadêmico.
+            </small>
+
+            <small>
+                HTML5 • CSS3 • JavaScript • Supabase
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/data.js"></script>
+
+   
+    <script src="js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    
+    <script src="js/supabase-config.js"></script>
+
+   
+    <script src="js/favorites-page.js"></script>
+
+</body>
+
+</html>

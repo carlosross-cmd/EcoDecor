@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EcoDecor: decoração sustentável, peças conscientes e design acolhedor."
+    >
+
+    <title>EcoDecor | Decoração sustentável</title>
+
+   
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+   
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+  
+
+    <div class="announcement">
+
+        <p>
+            Peças conscientes para ambientes com personalidade
+            <span>•</span>
+            Projeto acadêmico EcoDecor
+        </p>
+
+    </div>
+
+
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="EcoDecor - página inicial"
+            >
+
+                <span class="brand-mark">⌁</span>
+
+                <span>
+                    <strong>
+                        Eco<span>Decor</span>
+                    </strong>
+
+                    <small>
+                        Decoração sustentável
+                    </small>
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-nav"
+                id="mainNav"
+                aria-label="Navegação principal"
+            >
+
+                <a
+                    class="active"
+                    href="index.html"
+                >
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="#sobre">
+                    Sobre nós
+                </a>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+                <a
+                    class="icon-button"
+                    href="produtos.html"
+                    aria-label="Buscar produtos"
+                >
+                    ⌕
+                </a>
+
+                <a
+                    class="icon-button favorite-link"
+                    href="favoritos.html"
+                    aria-label="Favoritos"
+                >
+                    ♡
+                    <span id="favoriteCount">0</span>
+                </a>
+
+                <a
+                    class="icon-button"
+                    href="checkout.html"
+                    aria-label="Carrinho"
+                >
+                    🛒
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero-section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-copy">
+
+                    <p class="eyebrow">
+                        DECORAÇÃO COM PROPÓSITO
+                    </p>
+
+                    <h1>
+                        Beleza que respeita
+                        <em>o planeta.</em>
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Transformamos materiais naturais e reutilizados
+                        em peças que deixam sua casa mais acolhedora,
+                        funcional e consciente.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-primary"
+                            href="produtos.html"
+                        >
+                            Explorar produtos
+                            <span>→</span>
+                        </a>
+
+                        <a
+                            class="text-link"
+                            href="#sobre"
+                        >
+                            Conheça nossa proposta ↗
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-benefits">
+
+                        <span>
+                            ✓ Materiais reaproveitados
+                        </span>
+
+                        <span>
+                            ✓ Design artesanal
+                        </span>
+
+                        <span>
+                            ✓ Compra consciente
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-glow"></div>
+
+                    <img
+                        src="imagens/hero.jpg"
+                        alt="Vasos de bambu suspensos com flores coloridas"
+                    >
+
+                    <div class="floating-note">
+
+                        <span>✳</span>
+
+                        <strong>
+                            Feito com consciência
+                        </strong>
+
+                        <small>
+                            Pequenas escolhas, grandes impactos.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    
+
+        <section
+            class="section products-preview"
+            id="produtos"
+        >
+
+            <div class="container">
+
+                <div class="section-heading split-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            NOSSO CATÁLOGO
+                        </p>
+
+                        <h2>
+                            Peças que contam uma história
+                        </h2>
+
+                        <p>
+                            Conheça uma seleção de produtos
+                            para transformar seus espaços.
+                        </p>
+
+                    </div>
+
+                    <a
+                        class="text-link"
+                        href="produtos.html"
+                    >
+                        Ver todos os produtos →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="product-grid"
+                    id="featuredProducts"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="benefit-strip">
+
+            <div class="container benefit-grid">
+
+                <article>
+
+                    <span>♧</span>
+
+                    <strong>
+                        Materiais reciclados
+                    </strong>
+
+                    <p>
+                        Damos uma nova vida aos recursos.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>♧</span>
+
+                    <strong>
+                        Produção consciente
+                    </strong>
+
+                    <p>
+                        Valorizamos criatividade e cuidado.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>♧</span>
+
+                    <strong>
+                        Qualidade e carinho
+                    </strong>
+
+                    <p>
+                        Detalhes pensados para durar.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>♧</span>
+
+                    <strong>
+                        Compra segura
+                    </strong>
+
+                    <p>
+                        Transparência em cada etapa.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <section
+            class="section about-section"
+            id="sobre"
+        >
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="imagens/sobre.jpg"
+                        alt="Almofadas decorativas coloridas com bordado em relevo"
+                    >
+
+                </div>
+
+
+                <div class="about-copy">
+
+                    <p class="eyebrow">
+                        NOSSO PROPÓSITO
+                    </p>
+
+                    <h2>
+                        Juntos por um futuro mais verde.
+                    </h2>
+
+                    <p>
+
+                        A EcoDecor acredita que a decoração pode
+                        ser uma ferramenta de transformação.
+                        Por isso, reunimos peças que valorizam
+                        materiais reutilizados, estética e
+                        consumo consciente.
+
+                    </p>
+
+                    <a
+                        class="button button-secondary"
+                        href="produtos.html"
+                    >
+                        Conhecer a coleção
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section
+            class="section contact-section"
+            id="contato"
+        >
+
+            <div class="container contact-card">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FALE CONOSCO
+                    </p>
+
+                    <h2>
+                        Seu espaço merece uma escolha consciente.
+                    </h2>
+
+                    <p>
+                        Entre em contato para conhecer os produtos
+                        e tirar suas dúvidas.
+                    </p>
+
+                </div>
+
+
+                <a
+                    class="button button-primary"
+                    href="mailto:contato@ecodecor.com"
+                >
+                    Enviar mensagem →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+
+            <div>
+
+                <a
+                    class="brand footer-brand"
+                    href="index.html"
+                >
+
+                    <span class="brand-mark">⌁</span>
+
+                    <span>
+
+                        <strong>
+                            Eco<span>Decor</span>
+                        </strong>
+
+                        <small>
+                            Decoração sustentável
+                        </small>
+
+                    </span>
+
+                </a>
+
+                <p>
+                    Mais verde, mais consciente, mais seu.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a href="produtos.html">
+                    Produtos
+                </a>
+
+                <a href="#sobre">
+                    Sobre nós
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <a href="#contato">
+                    Contato
+                </a>
+
+                <a href="checkout.html">
+                    Meu carrinho
+                </a>
+
+                <a href="meus-pedidos.html">
+                    Meus pedidos
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <small>
+                © 2026 EcoDecor. Projeto acadêmico.
+            </small>
+
+            <small>
+                HTML5 • CSS3 • JavaScript • Supabase
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================= -->
+
+    <!-- Dados dos produtos -->
+    <script src="js/data.js"></script>
+
+    <!-- Funções gerais do site e carrinho -->
+    <script src="js/app.js"></script>
+
+    <!-- Biblioteca oficial do Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Configuração do Supabase -->
+    <script src="js/supabase-config.js"></script>
+
+</body>
+</html>

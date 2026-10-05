@@ -1,0 +1,68 @@
+/* =========================================
+   ECODECOR - PÁGINA DE PRODUTO
+========================================= */
+.pd-page { padding-top: 28px; padding-bottom: 20px; }
+.pd-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; color: var(--muted); font-size: 13px; }
+.pd-breadcrumb a:hover { color: var(--green-700); }
+.pd-breadcrumb span:last-child { color: var(--text); font-weight: 600; }
+
+.pd-top { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+
+/* Galeria */
+.pd-main { position: relative; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: zoom-in; box-shadow: var(--shadow); }
+.pd-main img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform 0.2s ease; }
+@media (hover: hover) { .pd-main:hover img { transform: scale(2); } .pd-main:hover .pd-zoom-hint { opacity: 0; } }
+.pd-zoom-hint { position: absolute; left: 14px; bottom: 14px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.92); color: var(--green-900); font-size: 12px; font-weight: 700; pointer-events: none; transition: opacity 0.2s; }
+.pd-arrow { position: absolute; top: 50%; z-index: 2; width: 40px; height: 40px; transform: translateY(-50%); border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.92); color: var(--green-900); font-size: 26px; line-height: 1; cursor: pointer; box-shadow: 0 4px 14px rgba(18, 56, 43, 0.18); }
+.pd-arrow:hover { background: var(--white); }
+.pd-prev { left: 12px; } .pd-next { right: 12px; }
+.pd-thumbs { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.pd-thumb { width: 74px; height: 74px; padding: 0; overflow: hidden; border: 2px solid var(--border); border-radius: 12px; background: var(--white); cursor: pointer; opacity: 0.75; }
+.pd-thumb.active, .pd-thumb:hover { border-color: var(--green-700); opacity: 1; }
+.pd-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Informações */
+.pd-info h1 { margin: 6px 0 10px; font-family: "Playfair Display", serif; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; color: var(--green-950); }
+.pd-price { margin-bottom: 14px; color: var(--green-900); font-size: 32px; font-weight: 700; }
+.pd-short { margin-bottom: 24px; color: var(--muted); font-size: 16px; }
+.pd-label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 700; }
+.pd-qty { display: inline-flex; align-items: center; margin-bottom: 20px; overflow: hidden; border: 1px solid var(--border); border-radius: 999px; background: var(--white); }
+.pd-qty button { width: 42px; height: 42px; border: 0; background: transparent; color: var(--green-900); font-size: 20px; cursor: pointer; }
+.pd-qty button:hover { background: var(--green-100); }
+.pd-qty input { width: 52px; border: 0; text-align: center; font-weight: 700; background: transparent; -moz-appearance: textfield; }
+.pd-qty input::-webkit-outer-spin-button, .pd-qty input::-webkit-inner-spin-button { -webkit-appearance: none; }
+.pd-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.pd-actions .button { gap: 10px; }
+.pd-fav { position: static; margin: 0; width: 46px; height: 46px; }
+.pd-perks { display: flex; flex-direction: column; gap: 8px; margin-top: 26px; padding: 18px 20px; list-style: none; border-radius: var(--radius); background: var(--green-100); color: var(--green-900); font-size: 14px; font-weight: 600; }
+
+/* Seções */
+.pd-section { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+.pd-section h2 { margin-bottom: 16px; font-family: "Playfair Display", serif; font-size: 26px; color: var(--green-950); }
+.pd-section > p { max-width: 760px; color: var(--muted); font-size: 16px; }
+.pd-specs { max-width: 640px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--white); }
+.pd-specs div { display: grid; grid-template-columns: 160px 1fr; gap: 12px; padding: 14px 20px; }
+.pd-specs div:nth-child(odd) { background: var(--cream); }
+.pd-specs dt { font-weight: 700; color: var(--green-900); }
+.pd-specs dd { color: var(--muted); }
+.pd-eco-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.pd-eco-grid article { padding: 24px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--green-100); }
+.pd-eco-grid span { font-size: 28px; }
+.pd-eco-grid h3 { margin: 8px 0 6px; font-size: 17px; color: var(--green-950); }
+.pd-eco-grid p { color: var(--muted); font-size: 14px; }
+.pd-related-section { margin-top: 24px; }
+.pd-empty { padding: 80px 0; text-align: center; }
+.pd-empty h1 { margin-bottom: 10px; font-family: "Playfair Display", serif; }
+.pd-empty p { margin-bottom: 22px; color: var(--muted); }
+
+/* Lightbox */
+.pd-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(10, 25, 18, 0.88); cursor: zoom-out; }
+.pd-lightbox[hidden] { display: none; }
+.pd-lightbox img { max-width: 100%; max-height: 100%; border-radius: 12px; object-fit: contain; }
+.pd-lightbox-close { position: absolute; top: 18px; right: 22px; border: 0; background: transparent; color: #fff; font-size: 28px; cursor: pointer; }
+
+@media (max-width: 860px) {
+    .pd-top { grid-template-columns: 1fr; gap: 28px; }
+    .pd-eco-grid { grid-template-columns: 1fr; }
+    .pd-specs div { grid-template-columns: 120px 1fr; }
+}
