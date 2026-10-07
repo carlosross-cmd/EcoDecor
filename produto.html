@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do produto EcoDecor.">
+    <title>Produto | EcoDecor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+<body>
+    <div class="announcement"><p>Decoração consciente para todos os espaços <span>•</span> EcoDecor</p></div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><span class="brand-mark">⌁</span><span><strong>Eco<span>Decor</span></strong><small>Decoração sustentável</small></span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+                <a href="index.html">Início</a><a class="active" href="produtos.html">Produtos</a><a href="index.html#sobre">Sobre nós</a><a href="index.html#contato">Contato</a>
+            </nav>
+            <div class="header-actions"><a class="icon-button" href="produtos.html" aria-label="Buscar produtos">⌕</a><a class="icon-button favorite-link" href="favoritos.html" aria-label="Favoritos">♡<span id="favoriteCount">0</span></a><a class="icon-button" href="checkout.html" aria-label="Carrinho">🛒<span id="cartCount">0</span></a></div>
+        </div>
+    </header>
+
+    <main id="productPage" class="container pd-page"></main>
+
+    <section class="section pd-related-section" id="relatedSection" hidden>
+        <div class="container">
+            <div class="section-heading"><p class="eyebrow">CONTINUE EXPLORANDO</p><h2>Você também pode gostar</h2></div>
+            <div class="product-grid" id="relatedProducts"></div>
+        </div>
+    </section>
+
+    <div class="pd-lightbox" id="lightbox" hidden><button type="button" class="pd-lightbox-close" aria-label="Fechar">✕</button><img alt=""></div>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom"><small>© 2026 EcoDecor. Projeto acadêmico.</small><small>HTML5 • CSS3 • JavaScript • Supabase</small></div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/product-details.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/produto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
+    <script src="js/products-sync.js"></script>
+</body>
+</html>
